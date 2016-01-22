@@ -47,7 +47,7 @@ namespace numl.Supervised.KNN
         /// serialized.</param>
         public override void WriteXml(XmlWriter writer)
         {
-            writer.WriteAttributeString("K", K.ToString("r"));
+            writer.WriteAttributeString("K", K.ToString("d"));
             Xml.Write<Descriptor>(writer, Descriptor);
             Xml.Write<Matrix>(writer, X);
             Xml.Write<Vector>(writer, Y);
